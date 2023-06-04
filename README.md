@@ -7,17 +7,12 @@ Normally, the Corne LP keyboard has a 3x6\_3 split layout, but I ordered one wit
 For instructions on how to use this my custom keymap, please refer to the [QMK Firmware Documentation](https://docs.qmk.fm/#/newbs_building_firmware_workflow?id=review-workflow-output).
 
 ## Keymap
-The keymap consists of three primary layers
+The keymap consists of four layers
 
 0. QWERTY
 1. Numbers and symbols
 2. Function, audio, brightness and movement
-
-and an additional layer
-
-3. Custom
-
-that is free to be further customized.
+3. Mouse
 
 The keymap was designed in such a way that it should be easy, relative to other 36-key layouts, to switch between this layout and a normal laptop layout. It was based on the article [Designing a 36-key custom keyboard layout](https://peterxjang.com/blog/designing-a-36-key-custom-keyboard-layout.html), but modified to better align with a Swedish laptop layout while still following the guidelines in the article.
 
@@ -63,13 +58,13 @@ The keymap was designed in such a way that it should be easy, relative to other 
                   |       |L3/ESC |       |     |       |(hold) |       |
                   `-------'-------'-------'     `-------'-------'-------'
 
-3. Custom
+3. Mouse
   ,-------.-------.-------.-------.-------.     ,-------.-------.-------.-------.-------.
-  |       |       |       |       |       |     |       |       |       |       |       |
+  |       |       | MS↑   |       |       |     |       | BTN1  | BTN2  | BTN3  |       |
   |-------+-------+-------+-------+-------|     |-------+-------+-------+-------+-------|
-  |       |       |       |       |       |     |       |       |       |       |       |
+  | BTN4  | MS←   | MS↓   | MS→   |       |     |       | ACC0  | ACC1  | ACC2  | BTN5  |
   |-------+-------+-------+-------+-------|     |-------+-------+-------+-------+-------|
-  |       |       |       |       |       |     |       |       |       |       |       |
+  |       |       |       |       |       |     | WH←   | WH↓   | WH↑   | WH→   |       |
   `-------'-------'-------'-------'-------'     `-------'-------'-------'-------'-------'
 
                   ,-------.-------.-------.     ,-------.-------.-------.
