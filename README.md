@@ -7,12 +7,13 @@ Normally, the Corne LP keyboard has a 3x6\_3 split layout, but I ordered one wit
 For instructions on how to use this my custom keymap, please refer to the [QMK Firmware Documentation](https://docs.qmk.fm/#/newbs_building_firmware_workflow?id=review-workflow-output).
 
 ## Keymap
-The keymap consists of four layers
+The keymap consists of the following layers:
 
 0. QWERTY
-1. Numbers and symbols
-2. Function, audio, brightness and movement
-3. Mouse
+1. Numbers and arrows
+2. Symbols
+3. Function, audio, brightness
+4. Mouse
 
 The keymap was designed in such a way that it should be easy, relative to other 36-key layouts, to switch between this layout and a normal laptop layout. It was based on the article [Designing a 36-key custom keyboard layout](https://peterxjang.com/blog/designing-a-36-key-custom-keyboard-layout.html), but modified to better align with a Swedish laptop layout while still following the guidelines in the article.
 
@@ -25,40 +26,53 @@ The keymap was designed in such a way that it should be easy, relative to other 
   |-------+-------+-------+-------+-------|     |-------+-------+-------+-------+-------|
   | A     | S     | D     | F     | G     |     | H     | J     | K     | L     | '*    |
   |-------+-------+-------+-------+-------|     |-------+-------+-------+-------+-------|
-  | SFT/Z | X     | C     | V     | B     |     | N     | M     | ,;    | .:    | SFT/-_|
+  | Z     | X     | C     | V     | B     |     | N     | M     | ,;    | .:    | -_    |
   `-------'-------'-------'-------'-------'     `-------'-------'-------'-------'-------'
 
                   ,-------.-------.-------.     ,-------.-------.-------.
-                  | WIN   |L1/ESC |CTR/TAB|     |ALT/ENT|L2/SPC | BSP   |
+                  | WIN   |L2/ESC |SFT/TAB|     |CTL/ENT|L1/SPC |ALT/BSP|
                   `-------'-------'-------'     `-------'-------'-------'
 
-1. Numbers and symbols
+1. Numbers and arrows
   ,-------.-------.-------.-------.-------.     ,-------.-------.-------.-------.-------.
-  | 1!    | 2"    | 3#    | 4¤    | 5%    |     | 6&    | 7/    | 8(    | 9)    | 0=    |
+  | 1     | 2     | 3     | 4     | 5     |     | 6     | 7     | 8     | 9     | 0     |
   |-------+-------+-------+-------+-------|     |-------+-------+-------+-------+-------|
-  | |     | @     | ~     | $     | ^     |     | +     | {     | [     | ]     | }     |
+  |       |       |       |       |       |     | LEFT  | DOWN  | UP    | RIGHT |       |
   |-------+-------+-------+-------+-------|     |-------+-------+-------+-------+-------|
-  | SFT   | <     | >     | \     |       |     | ?     | Ö     | Ä     | Å     | SFT/` |
+  |       |       |       |       |       |     |       | Ö     | Ä     | Å     |       |
+  `-------'-------'-------'-------'-------'     `-------'-------'-------'-------'-------'
+
+                  ,-------.-------.-------.     ,-------.-------.-------.
+                  |       |L3/ESC | L4    |     |       |(hold) |       |
+                  `-------'-------'-------'     `-------'-------'-------'
+
+2. Symbols
+  ,-------.-------.-------.-------.-------.     ,-------.-------.-------.-------.-------.
+  | !     | "     | #     | $     | %     |     | &     | /     | (     | )     | =     |
+  |-------+-------+-------+-------+-------|     |-------+-------+-------+-------+-------|
+  | |     | @     | <     | >     |       |     | +     | {     | [     | ]     | }     |
+  |-------+-------+-------+-------+-------|     |-------+-------+-------+-------+-------|
+  |       | £     | ¤     | €     |       |     | ?     | \     | ~     | ^     | `     |
   `-------'-------'-------'-------'-------'     `-------'-------'-------'-------'-------'
 
                   ,-------.-------.-------.     ,-------.-------.-------.
                   |       |(hold) |       |     |       |L3/SPC |       |
                   `-------'-------'-------'     `-------'-------'-------'
 
-2. Function, audio, brightness and movement
+3. Function, audio and brightness
   ,-------.-------.-------.-------.-------.     ,-------.-------.-------.-------.-------.
   | F1    | F2    | F3    | F4    | F5    |     | F6    | F7    | F8    | F9    | F10   |
   |-------+-------+-------+-------+-------|     |-------+-------+-------+-------+-------|
-  | F11   | F12   | Vol-  |  Vol+ | MUTE  |     | LEFT  | DOWN  | UP    | RIGHT |       |
+  | F11   | F12   | Vol-  |  Vol+ | MUTE  |     |       |       |       |       |       |
   |-------+-------+-------+-------+-------|     |-------+-------+-------+-------+-------|
   |       |       | Br-   | Br+   |       |     |       |       |       |       |       |
   `-------'-------'-------'-------'-------'     `-------'-------'-------'-------'-------'
 
                   ,-------.-------.-------.     ,-------.-------.-------.
-                  |       |L3/ESC |       |     |       |(hold) |       |
+                  |       |(hold) |       |     |       |(hold) |       |
                   `-------'-------'-------'     `-------'-------'-------'
 
-3. Mouse
+4. Mouse
   ,-------.-------.-------.-------.-------.     ,-------.-------.-------.-------.-------.
   |       |       | MS↑   |       |       |     |       | BTN1  | BTN2  | BTN3  |       |
   |-------+-------+-------+-------+-------|     |-------+-------+-------+-------+-------|
@@ -68,6 +82,6 @@ The keymap was designed in such a way that it should be easy, relative to other 
   `-------'-------'-------'-------'-------'     `-------'-------'-------'-------'-------'
 
                   ,-------.-------.-------.     ,-------.-------.-------.
-                  |       |(hold) |       |     |       |(hold) |       |
+                  |       |(hold) | L1    |     |       |(hold) |       |
                   `-------'-------'-------'     `-------'-------'-------'
 ```
