@@ -45,8 +45,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [NUM] = LAYOUT_split_3x5_3(
         KC_1 ,   KC_2 ,   KC_3 ,   KC_4 ,   KC_5 ,                          KC_6 ,   KC_7 ,   KC_8 ,   KC_9 ,   KC_0 ,
       _______, KC_MUTE, KC_VOLD, KC_VOLU, RGB_TOG,                        KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, _______, 
-      _______, _______, KC_BRID, KC_BRIU, RGB_MOD,                        _______, SE_ODIA, SE_ADIA, SE_ARNG, _______, 
-                        _______, _______, _______,                        _______, _______, _______
+      KC_TRNS, KC_TRNS, ALT_T(KC_BRID), WIN_T(KC_BRIU), RGB_MOD,                        _______, WIN_T(SE_ODIA), ALT_T(SE_ADIA), CTL_T(SE_ARNG), KC_TRNS, 
+                        KC_TRNS, KC_TRNS, KC_TRNS,                        KC_TRNS, KC_TRNS, KC_TRNS
     ),
 
 /*
@@ -64,8 +64,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [SYM] = LAYOUT_split_3x5_3(
       SE_EXLM, SE_DQUO, SE_HASH, SE_DLR , SE_PERC,                        SE_AMPR, SE_SLSH, SE_LPRN, SE_RPRN, SE_EQL ,
       SE_PIPE, SE_AT  , SE_LABK, SE_RABK, _______,                        SE_BSLS, SE_LCBR, SE_LBRC, SE_RBRC, SE_RCBR,
-      _______, _______, _______, _______, _______,                        SE_TILD, SE_PLUS, SE_QUES, SE_CIRC, SE_GRV ,
-                        _______, _______, _______,                        _______, _______, _______
+      KC_TRNS, DT_PRNT, DT_DOWN, DT_UP, _______,                        SE_TILD, SE_PLUS, SE_QUES, SE_CIRC, SE_GRV ,
+                        KC_TRNS, KC_TRNS, KC_TRNS,                        KC_TRNS, KC_TRNS, KC_TRNS
     ),
 
 /*
