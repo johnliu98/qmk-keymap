@@ -35,17 +35,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,------.------.------.------.------.                       ,------.------.------.------.------.
  * |  1   |  2   |  3   |  4   |  5   |                       |  6   |  7   |  8   |  9   |  0   |
  * |------+------+------+------+------|                       |------+------+------+------+------|
- * |      | Mute | Vol- | Vol+ |RgbTog|                       |  Left| Down | Up   | Right|      |
+ * | Mute | Vol- | Vol+ |  F1  |  F2  |                       | Left | Down | Up   | Right|      |
  * |------+------+------+------+------|                       +------+------+------+------+------|
- * |      |      | Br-  | Br+  |RgbMod|                       |      |  Ö   |  Ä   |  Å   |      |
+ * |RgbTog| Br-  | Br+  |  F3  |  F4  |                       |      |  Ö   |  Ä   |  Å   |      |
  * `------'------'------+------+------+------.         ,------+------+------+------'------'------'
  *                      |      |      |      |         |      |(hold)|      |
  *                      `------'------'------'         `------'------'------'
  */
     [NUM] = LAYOUT_split_3x5_3(
         KC_1 ,   KC_2 ,   KC_3 ,   KC_4 ,   KC_5 ,                          KC_6 ,   KC_7 ,   KC_8 ,   KC_9 ,   KC_0 ,
-      _______, KC_MUTE, KC_VOLD, KC_VOLU, RGB_TOG,                        KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, _______, 
-      KC_TRNS, KC_TRNS, ALT_T(KC_BRID), WIN_T(KC_BRIU), RGB_MOD,                        _______, WIN_T(SE_ODIA), ALT_T(SE_ADIA), CTL_T(SE_ARNG), KC_TRNS, 
+      KC_MUTE, KC_VOLD, KC_VOLU,  KC_F1 ,  KC_F2 ,                        KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, _______, 
+      SFT_T(RGB_TOG), CTL_T(KC_BRID), ALT_T(KC_BRIU), WIN_T(KC_F3), KC_F4,                        _______, WIN_T(SE_ODIA), ALT_T(SE_ADIA), CTL_T(SE_ARNG), KC_TRNS, 
                         KC_TRNS, KC_TRNS, KC_TRNS,                        KC_TRNS, KC_TRNS, KC_TRNS
     ),
 
