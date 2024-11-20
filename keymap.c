@@ -92,3 +92,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 layer_state_t layer_state_set_user(layer_state_t state){
   return update_tri_layer_state(state, NUM, SYM, MOUSE);
 }
+
+bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case SFT_T(KC_Z):
+        case SFT_T(SE_MINS):
+        case SFT_T(RGB_TOG):
+            return true;
+        default:
+            return false;
+    }
+}
